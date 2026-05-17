@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Westlife 25 Years Of Hits</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#000;
+color:white;
+overflow-x:hidden;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+position:fixed;
+width:100%;
+background:rgba(0,0,0,0.7);
+backdrop-filter:blur(10px);
+z-index:999;
+}
+
+.logo{
+font-size:20px;
+font-weight:700;
+color:#f6b74a;
+}
+
+nav a{
+margin-left:25px;
+text-decoration:none;
+color:white;
+font-size:14px;
+}
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+background:radial-gradient(circle at center,#331400,#000);
+}
+
+.hero h1{
+font-size:60px;
+color:#f6b74a;
+letter-spacing:4px;
+}
+
+.hero h2{
+font-size:26px;
+margin-top:10px;
+color:#ccc;
+}
+
+.world{
+margin:30px 0;
+font-size:100px;
+font-weight:bold;
+background:linear-gradient(90deg,#ffd27a,#f6b74a,#ffd27a);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.event-date{
+margin-top:10px;
+font-size:18px;
+}
+
+.countdown{
+display:flex;
+gap:20px;
+margin-top:30px;
+}
+
+.box{
+background:#111;
+padding:20px;
+border-radius:10px;
+width:100px;
+box-shadow:0 0 20px rgba(255,170,0,0.4);
+}
+
+.box h3{
+font-size:28px;
+color:#f6b74a;
+}
+
+.buttons{
+margin-top:30px;
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.btn{
+padding:14px 25px;
+border:none;
+border-radius:8px;
+font-weight:600;
+cursor:pointer;
+}
+
+.buy{
+background:#f6b74a;
+color:black;
+}
+
+.dark{
+background:#111;
+color:white;
+border:1px solid #444;
+}
+
+.features{
+margin-top:60px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+padding:40px 10%;
+}
+
+.card{
+background:#111;
+padding:25px;
+border-radius:12px;
+text-align:center;
+border:1px solid #333;
+}
+
+.card h3{
+color:#f6b74a;
+margin-bottom:10px;
+}
+
+.live{
+padding:40px 10%;
+}
+
+.activity{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+margin-top:20px;
+}
+
+.act{
+background:#111;
+padding:20px;
+border-radius:10px;
+border:1px solid #333;
+}
+
+footer{
+margin-top:60px;
+padding:30px;
+text-align:center;
+background:#111;
+color:#aaa;
+}
+
+@media(max-width:700px){
+
+.hero h1{
+font-size:40px;
+}
+
+.world{
+font-size:70px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+WESTLIFE TOUR
+</div>
+
+<nav>
+<a href="#">HOME</a>
+<a href="#">EVENT</a>
+<a href="#">SEAT PLAN</a>
+<a href="#">TICKET</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h2>25 YEARS OF HITS</h2>
+
+<h1>WESTLIFE</h1>
+
+<h2>THE ANNIVERSARY WORLD TOUR</h2>
+
+<div class="world">25</div>
+
+<div class="event-date">
+Saturday, 23 January 2027<br>
+Gelora Bung Karno Main Stadium
+</div>
+
+<div class="countdown">
+
+<div class="box">
+<h3 id="days">0</h3>
+<p>DAYS</p>
+</div>
+
+<div class="box">
+<h3 id="hours">0</h3>
+<p>HOURS</p>
+</div>
+
+<div class="box">
+<h3 id="minutes">0</h3>
+<p>MINUTES</p>
+</div>
+
+<div class="box">
+<h3 id="seconds">0</h3>
+<p>SECONDS</p>
+</div>
+
+</div>
+
+<div class="buttons">
+
+<button class="btn buy">BUY TICKET</button>
+
+<button class="btn dark">VIEW SEAT PLAN</button>
+
+<button class="btn dark">WATCH TRAILER</button>
+
+</div>
+
+</section>
+
+<section class="features">
+
+<div class="card">
+<h3>E-TICKET DIGITAL</h3>
+<p>Tiket QR Code eksklusif</p>
+</div>
+
+<div class="card">
+<h3>PEMBAYARAN AMAN</h3>
+<p>QRIS • Transfer • E-Wallet</p>
+</div>
+
+<div class="card">
+<h3>WAITING ROOM</h3>
+<p>Sistem antrian otomatis</p>
+</div>
+
+<div class="card">
+<h3>LIVE NOTIFICATION</h3>
+<p>Pembelian realtime</p>
+</div>
+
+</section>
+
+<section class="live">
+
+<h2>LIVE ACTIVITY</h2>
+
+<div class="activity">
+
+<div class="act">
+Andi dari Jakarta baru saja membeli 2 tiket VIP<br>
+<small>2 menit lalu</small>
+</div>
+
+<div class="act">
+Siti dari Bandung membeli 1 tiket CAT 1A<br>
+<small>3 menit lalu</small>
+</div>
+
+<div class="act">
+Rudi dari Surabaya membeli 4 tiket CAT 2B<br>
+<small>5 menit lalu</small>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+Rayakan 25 tahun perjalanan musik Westlife bersama jutaan fans di konser paling spektakuler!
+
+</footer>
+
+<script>
+
+var target = new Date("Jan 23, 2027 19:00:00").getTime();
+
+setInterval(function(){
+
+var now = new Date().getTime();
+
+var distance = target - now;
+
+var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+document.getElementById("days").innerHTML = days;
+document.getElementById("hours").innerHTML = hours;
+document.getElementById("minutes").innerHTML = minutes;
+document.getElementById("seconds").innerHTML = seconds;
+
+},1000);
+
+</script>
+
+</body>
+</html>
